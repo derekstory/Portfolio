@@ -5,25 +5,33 @@
     <title>Derek Story Portfolio</title>
     <link rel="stylesheet" type="text/css" href="portfolio.css">
 <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script src="http://www.google.com/jsapi"></script>
 </head>
 
 <body>
+  <div id="fadeHead">
+    <h3 id="homeButton">Home</h3>
+
+  </div>
+</div><br></br>
+
   <div id="head">
+
   <div id="bar1">
   </div>
  <div id="title">
-  </div>
+  </div><br></br>
 
    <div class="options">
-    <a href="#about"><h1 id="optionOne">ABOUT</h1></a>
+    <h1 id="optionOne">ABOUT</h1>
     <h1 id="optionTwo">RECENT WORK</h1>
-    <h1 id="optionThree">INTERESTS</h1>
     <h1 id="optionFour">LINKS</h1>
+    <h1 id="optionThree">INTERESTS</h1>
     <h1 id="optionFive">CONTACT</h1>
    </div>
 
-<div id="bar">
-  </div>
+<div id="bar"></div>
+
 </div>
 <div id="about">
   <h1>About</h1>
@@ -38,10 +46,10 @@
 </div>
 <div id="examples">
   <h1>Recent Work</h1>
-  <a href="bravinginfinity.com" title="BravingInfinity.com">BravingInfinity.com</a>
+  <a href="http://bravinginfinity.com" target="_blank" title="BravingInfinity.com">BravingInfinity.com</a>
   <p>Doctus percipit cotidieque id vix, te vel velit zril, omittam mandamus an qui. Ei cum aperiam repudiare, no labores voluptua his, vel audiam interesset dissentiet cu. Rebum legimus nam cu. Nam et adhuc commodo omittam, vim quis petentium expetendis no, amet similique ex eam. Nam cu recusabo constituam suscipiantur, minim populo ex vim.</p>
 
-  <a href="dev.imagelocker.com/albums.php" title="imagelocker.com">ImageLocker.com</a>
+  <a href="http://dev.imagelocker.com/albums.php" target="_blank" title="imagelocker.com">ImageLocker.com</a>
   <p>Doctus percipit cotidieque id vix, te vel velit zril, omittam mandamus an qui. Ei cum aperiam repudiare, no labores voluptua his, vel audiam interesset dissentiet cu. Rebum legimus nam cu. Nam et adhuc commodo omittam, vim quis petentium expetendis no, amet similique ex eam. Nam cu recusabo constituam suscipiantur, minim populo ex vim.</p>
 </div>
 
@@ -57,9 +65,9 @@
 
 <div id="links">
   <h1>Links</h1>
-  <a href="https://github.com/derekstory" style="display: inline">GitHub-</a>
+  <a href="https://github.com/derekstory" target="_blank" style="display: inline">GitHub-</a>
   <h3 style="display: inline; font-size: .8em; color: #333">See my code</h3><br></br>
- <a href="https://linkedin.com" style="display: inline">LinkedIn-</a>
+ <a href="http://www.linkedin.com/pub/derek-story/45/532/6b4" target="_blank" style="display: inline">LinkedIn-</a>
   <h3 style="display: inline; font-size: .8em; color: #333">Connect Via LinkedIn</h3><br></br>
 </div>
 <div id="contact">
@@ -73,15 +81,169 @@
 <SCRIPT type="text/javascript">
 $("#optionOne").click(function fade(div_id) {
 $('#about').delay(700).fadeIn(1200);
-$('#examples').fadeOut(500);
+$('#homeButton').delay(700).fadeIn(1200);
+$('#examples').fadeOut(0);
+$('#interests').fadeOut(0);
+$('#links').fadeOut(0);
+$('#contact').fadeOut(0);
 $('#head').fadeOut(700);
 
 });
-$("#optionTwo").click(function fade(div_id) {
-$('#about').fadeOut(0);
-$('#examples').fadeIn(1200);
 
+$("#optionTwo").click(function fade(div_id) {
+$('#examples').delay(700).fadeIn(1200);
+$('#homeButton').delay(700).fadeIn(1200);
+$('#about').fadeOut(0);
+$('#interests').fadeOut(0);
+$('#links').fadeOut(0);
+$('#contact').fadeOut(0);
+$('#head').fadeOut(700);
+});
+
+$("#optionThree").click(function fade(div_id) {
+$('#interests').delay(700).fadeIn(1200);
+$('#homeButton').delay(700).fadeIn(1200);
+$('#about').fadeOut(0);
+$('#examples').fadeOut(0);
+$('#links').fadeOut(0);
+$('#contact').fadeOut(0);
+$('#head').fadeOut(700);
+});
+
+$("#optionFour").click(function fade(div_id) {
+$('#links').delay(700).fadeIn(1200);
+$('#homeButton').delay(700).fadeIn(1200);
+$('#about').fadeOut(0);
+$('#examples').fadeOut(0);
+$('#interests').fadeOut(0);
+$('#contact').fadeOut(0);
+$('#head').fadeOut(700);
+});
+
+$("#optionFive").click(function fade(div_id) {
+$('#contact').delay(700).fadeIn(1200);
+$('#homeButton').delay(700).fadeIn(1200);
+$('#about').fadeOut(0);
+$('#examples').fadeOut(0);
+$('#interests').fadeOut(0);
+$('#links').fadeOut(0);
+$('#head').fadeOut(700);
+});
+$("#homeButton").click(function fade(div_id) {
+$('#head').delay(700).fadeIn(1200);
+$('#homeButton').fadeOut(500);
+$('#about').fadeOut(500);
+$('#examples').fadeOut(500);
+$('#interests').fadeOut(500);
+$('#links').fadeOut(500);
+$('#contact').fadeOut(500);
+});
+$("#optionOne").mouseenter(function fade(div_id) {
+$('#optionTwo').fadeTo(0, 0.2);
+$('#optionThree').fadeTo(0, 0.2);
+$('#optionFour').fadeTo(0, 0.2);
+$('#optionFive').fadeTo(0, 0.2);
+});
+$("#optionOne").mouseleave(function fade(div_id) {
+$('#optionTwo').fadeTo(0, 1);
+$('#optionThree').fadeTo(0, 1);
+$('#optionFour').fadeTo(0, 1);
+$('#optionFive').fadeTo(0, 1);
+});
+$("#optionTwo").mouseenter(function fade(div_id) {
+$('#optionOne').fadeTo(0, 0.2);
+$('#optionThree').fadeTo(0, 0.2);
+$('#optionFour').fadeTo(0, 0.2);
+$('#optionFive').fadeTo(0, 0.2);
+});
+$("#optionTwo").mouseleave(function fade(div_id) {
+$('#optionOne').fadeTo(0, 1);
+$('#optionThree').fadeTo(0, 1);
+$('#optionFour').fadeTo(0, 1);
+$('#optionFive').fadeTo(0, 1);
+});
+$("#optionThree").mouseenter(function fade(div_id) {
+$('#optionOne').fadeTo(0, 0.2);
+$('#optionTwo').fadeTo(0, 0.2);
+$('#optionFour').fadeTo(0, 0.2);
+$('#optionFive').fadeTo(0, 0.2);
+});
+$("#optionThree").mouseleave(function fade(div_id) {
+$('#optionOne').fadeTo(0, 1);
+$('#optionTwo').fadeTo(0, 1);
+$('#optionFour').fadeTo(0, 1);
+$('#optionFive').fadeTo(0, 1);
+});
+$("#optionFour").mouseenter(function fade(div_id) {
+$('#optionOne').fadeTo(0, 0.2);
+$('#optionTwo').fadeTo(0, 0.2);
+$('#optionThree').fadeTo(0, 0.2);
+$('#optionFive').fadeTo(0, 0.2);
+});
+$("#optionFour").mouseleave(function fade(div_id) {
+$('#optionOne').fadeTo(0, 1);
+$('#optionTwo').fadeTo(0, 1);
+$('#optionThree').fadeTo(0, 1);
+$('#optionFive').fadeTo(0, 1);
+});
+$("#optionFive").mouseenter(function fade(div_id) {
+$('#optionOne').fadeTo(0, 0.2);
+$('#optionTwo').fadeTo(0, 0.2);
+$('#optionThree').fadeTo(0, 0.2);
+$('#optionFour').fadeTo(0, 0.2);
+});
+$("#optionFive").mouseleave(function fade(div_id) {
+$('#optionOne').fadeTo(0, 1);
+$('#optionTwo').fadeTo(0, 1);
+$('#optionThree').fadeTo(0, 1);
+$('#optionFour').fadeTo(0, 1);
+});
+$("#optionOne").mouseenter(function fade(div_id) {
+$('body').css('background-color', '#E89292');
+});
+$("#optionOne").mouseleave(function fade(div_id) {
+$('body').css('background-color', '#FFF');
+});
+$("#optionTwo").mouseenter(function fade(div_id) {
+$('body').css('background-color', '#FCFF96');
+});
+$("#optionTwo").mouseleave(function fade(div_id) {
+$('body').css('background-color', '#FFF');
+});
+$("#optionThree").mouseenter(function fade(div_id) {
+$('body').css('background-color', '#B56C38');
+});
+$("#optionThree").mouseleave(function fade(div_id) {
+$('body').css('background-color', '#FFF');
+});
+$("#optionFour").mouseenter(function fade(div_id) {
+$('body').css('background-color', '#A5ADCF');
+});
+$("#optionFour").mouseleave(function fade(div_id) {
+$('body').css('background-color', '#FFF');
+});
+$("#optionFive").mouseenter(function fade(div_id) {
+$('body').css('background-color', '#9BC9B8');
+});
+$("#optionFive").mouseleave(function fade(div_id) {
+$('body').css('background-color', '#FFF');
+});
+$("#optionOne").click(function fade(div_id) {
+$('body').css('background-color', '#FFF');
+});
+$("#optionTwo").click(function fade(div_id) {
+$('body').css('background-color', '#FFF');
+});
+$("#optionThree").click(function fade(div_id) {
+$('body').css('background-color', '#FFF');
+});
+$("#optionFour").click(function fade(div_id) {
+$('body').css('background-color', '#FFF');
+});
+$("#optionFive").click(function fade(div_id) {
+$('body').css('background-color', '#FFF');
 });
 </SCRIPT>
 
 </body>
+
