@@ -9,7 +9,14 @@
 </head>
 
 <body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('body').fadeIn(1000);
+});
+</script>
+
   <div id="fadeHead">
+
     <h3 id="homeButton">Home</h3>
 
   </div>
@@ -31,7 +38,28 @@
    </div>
 
 <div id="bar"></div>
-
+  <div id="birdBox">
+    <div id="bird1"></div>
+    <div id="bird2"></div>
+    <div id="bird3"></div>
+    <div id="bird4"></div>
+    <div id="bird5"></div>
+    <div id="bird6"></div>
+    <div id="bird7"></div>
+    <div id="bird8"></div>
+    <div id="bird9"></div>
+    <div id="bird10"></div>
+    <div id="bird11"></div>
+    <div id="bird12"></div>
+    <div id="bird13"></div>
+    <div id="bird14"></div>
+    <div id="bird15"></div>
+    <div id="bird16"></div>
+    <div id="bird17"></div>
+    <div id="bird18"></div>
+    <div id="bird19"></div>
+    <div id="bird120"></div>
+  </div>
 </div>
 <div id="about">
   <h1>About</h1>
@@ -80,7 +108,7 @@
 
 <SCRIPT type="text/javascript">
 $("#optionOne").click(function fade(div_id) {
-$('#about').delay(700).fadeIn(1200);
+$('#about').delay(1000).fadeIn(700);
 $('#homeButton').delay(700).fadeIn(1200);
 $('#examples').fadeOut(0);
 $('#interests').fadeOut(0);
@@ -92,7 +120,7 @@ $('#head').fadeOut(700);
 
 $("#optionTwo").click(function fade(div_id) {
 $('#examples').delay(700).fadeIn(1200);
-$('#homeButton').delay(700).fadeIn(1200);
+$('#homeButton').delay(1000).fadeIn(700);
 $('#about').fadeOut(0);
 $('#interests').fadeOut(0);
 $('#links').fadeOut(0);
@@ -243,6 +271,55 @@ $('body').css('background-color', '#FFF');
 $("#optionFive").click(function fade(div_id) {
 $('body').css('background-color', '#FFF');
 });
+
+$(".options").mouseenter(function fade(div_id) {
+$('#birdBox').fadeIn(0);
+$('#bird1').fadeIn(0).animate({left:"100%", marginLeft: "800px", marginTop: "-600px"},3500);
+$('#bird2').fadeIn(0).animate({left:"100%", marginLeft: "800px", marginTop: "-80px"},3500);
+$('#bird3').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-10px"}, 5000);
+$('#bird4').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-310px"}, 5000);
+$('#bird5').fadeIn(0).animate({left:"100%", marginLeft: "800px", marginTop: "-110px"}, 6000);
+$('#bird6').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-110px"}, 4000);
+$('#bird7').fadeIn(0).animate({left:"100%", marginLeft: "700px", marginTop: "-110px"}, 7000);
+$('#bird8').fadeIn(0).animate({left:"100%", marginLeft: "700px", marginTop: "-310px"}, 7000);
+$('#bird9').fadeIn(0).animate({left:"100%", marginLeft: "700px", marginTop: "-10px"}, 7000);
+$('#bird10').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-10px"}, 4000);
+$('#bird12').fadeIn(0).animate({left:"100%", marginLeft: "800px", marginTop: "-10px"}, 8000);
+$('#bird13').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-110px"}, 10000);
+$('#bird14').fadeIn(0).animate({left:"100%", marginLeft: "900px", marginTop: "-310px"}, 7000);
+$('#bird15').fadeIn(0).animate({left:"100%", marginLeft: "500px", marginTop: "-10px"}, 4000);
+$('#bird16').fadeIn(0).animate({left:"100%", marginLeft: "900px", marginTop: "-10px"}, 3000);
+$('#bird17').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-10px"}, 10000);
+$('#bird18').fadeIn(0).animate({left:"100%", marginLeft: "400px", marginTop: "-10px"}, 1000);
+$('#bird19').fadeIn(0).animate({left:"100%", marginLeft: "700px", marginTop: "-10px"}, 5000);
+$('#bird20').fadeIn(0).animate({left:"100%", marginLeft: "900px", marginTop: "-10px"}, 4000);
+});
+
+$(".options").mouseleave(function fade(div_id) {
+$('#birdBox').stop().removeAttr('style').fadeOut(1000);
+$('#bird1').stop().removeAttr('style');
+$('#bird2').stop().removeAttr('style');
+$('#bird3').stop().removeAttr('style');
+$('#bird4').stop().removeAttr('style');
+$('#bird5').stop().removeAttr('style');
+$('#bird6').stop().removeAttr('style');
+$('#bird7').stop().removeAttr('style');
+$('#bird8').stop().removeAttr('style');
+$('#bird9').stop().removeAttr('style');
+$('#bird10').stop().removeAttr('style');
+$('#bird11').stop().removeAttr('style');
+$('#bird12').stop().removeAttr('style');
+$('#bird13').stop().removeAttr('style');
+$('#bird14').stop().removeAttr('style');
+$('#bird15').stop().removeAttr('style');
+$('#bird16').stop().removeAttr('style');
+$('#bird17').stop().removeAttr('style');
+$('#bird18').stop().removeAttr('style');
+$('#bird19').stop().removeAttr('style');
+$('#bird20').stop().removeAttr('style');
+});
+
+
 </SCRIPT>
 
 </body>
