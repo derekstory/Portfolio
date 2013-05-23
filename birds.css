@@ -1,0 +1,412 @@
+
+#birdBox{
+    display: none;
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -15px;
+}
+#bird1{
+    display: none;
+    background: url('images/birdSlow.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    margin-left: -50px;
+    background-size:  40px;
+}
+#bird2{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    margin-left: -50px;
+    background-size:  50px;
+    margin-bottom: -50px;
+}
+#bird3{
+    display: none;
+    background: url('images/birdSlow.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    margin-left: -50px;
+    background-size: 30px;
+    margin-bottom: -20px;
+}
+#bird4{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -50px;
+    margin-top: 0px;
+    margin-bottom: -530px;
+}
+#bird5{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -50px;
+    margin-top: -40px;
+    margin-bottom: -450px;
+}
+#bird5{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -50px;
+    margin-top: 0px;
+    margin-bottom: -100px;
+}
+#bird5{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -50px;
+    margin-top: -100px;
+}
+#bird6{
+    display: none;
+    background: url('images/birdSlow.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -50px;
+    margin-top: -200px;
+}
+#bird7{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  20px;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+#bird8{
+    display: none;
+    background: url('images/birdSlow.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  50px;
+    margin-left: -50px;
+    margin-top: -30px;
+}
+#bird9{
+    display: none;
+    background: url('images/birdSlow.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  30px;
+    margin-left: -50px;
+    margin-top: -40px;
+}
+#bird10{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -50px;
+    margin-top: -100px;
+}
+#bird11{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -50px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird12{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -50px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird13{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -50px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird14{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -50px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird15{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -50px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird16{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -50px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird17{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -50px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird18{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  60px;
+    margin-left: -50px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird19{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  50px;
+    margin-left: -50px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird20{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  50px;
+    margin-left: -200px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird21 {
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -50px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird22{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    margin-left: -200px;
+    background-size:  50px;
+    margin-bottom: -50px;
+}
+#bird23{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    margin-left: -200px;
+    background-size: 30px;
+    margin-bottom: -20px;
+}
+#bird24{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -200px;
+    margin-top: 0px;
+    margin-bottom: -530px;
+}
+#bird25{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -200px;
+    margin-top: -40px;
+    margin-bottom: -450px;
+}
+
+#bird26{
+    display: none;
+    background: url('images/birdSlow.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -200px;
+    margin-top: -200px;
+}
+#bird27{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  20px;
+    margin-left: -200px;
+    margin-top: -50px;
+}
+#bird28{
+    display: none;
+    background: url('images/birdSlow.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  50px;
+    margin-left: -200px;
+    margin-top: -30px;
+}
+#bird29{
+    display: none;
+    background: url('images/birdSlow.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  30px;
+    margin-left: -200px;
+    margin-top: -40px;
+}
+#bird30{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -200px;
+    margin-top: -100px;
+}
+#bird31{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -200px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird32{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -200px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird33{
+    display: none;
+    background: url('images/birdSlow.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -200px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird34{
+    display: none;
+    background: url('images/birdSlow.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -200px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird35{
+    display: none;
+    background: url('images/birdSlow.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -200px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird36{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -200px;
+    margin-top: -200px;
+    margin-bottom: -100px;
+}
+#bird37{
+    display: none;
+    background: url('images/birdFaster.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  40px;
+    margin-left: -200px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird38{
+    display: none;
+    background: url('images/birdSlow.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  60px;
+    margin-left: -200px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird39{
+    display: none;
+    background: url('images/birdSlow.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  50px;
+    margin-left: -200px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+#bird40{
+    display: none;
+    background: url('images/birdSlow.gif') no-repeat;
+    width: 100px;
+    height: 130px;
+    background-size:  50px;
+    margin-left: -200px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}

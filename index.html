@@ -4,6 +4,7 @@
     <meta name="description" content="The work of Derek Story" />
     <title>Derek Story Portfolio</title>
     <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="stylesheet" type="text/css" href="birds.css">
 <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 <script src="http://www.google.com/jsapi"></script>
 </head>
@@ -11,7 +12,8 @@
 <body>
 <script type="text/javascript">
 $(document).ready(function(){
-	$('body').fadeIn(1000);
+	$('body').fadeIn(1300);
+$("body").css("overflow", "hidden");
 });
 </script>
 
@@ -58,7 +60,27 @@ $(document).ready(function(){
     <div id="bird17"></div>
     <div id="bird18"></div>
     <div id="bird19"></div>
-    <div id="bird120"></div>
+    <div id="bird20"></div>
+    <div id="bird21"></div>
+    <div id="bird22"></div>
+    <div id="bird23"></div>
+    <div id="bird24"></div>
+    <div id="bird25"></div>
+    <div id="bird26"></div>
+    <div id="bird27"></div>
+    <div id="bird28"></div>
+    <div id="bird29"></div>
+    <div id="bird30"></div>
+    <div id="bird31"></div>
+    <div id="bird32"></div>
+    <div id="bird33"></div>
+    <div id="bird34"></div>
+    <div id="bird35"></div>
+    <div id="bird36"></div>
+    <div id="bird37"></div>
+    <div id="bird38"></div>
+    <div id="bird39"></div>
+    <div id="bird40"></div>
   </div>
 </div>
 <div id="about">
@@ -115,7 +137,6 @@ $('#interests').fadeOut(0);
 $('#links').fadeOut(0);
 $('#contact').fadeOut(0);
 $('#head').fadeOut(700);
-
 });
 
 $("#optionTwo").click(function fade(div_id) {
@@ -158,7 +179,7 @@ $('#links').fadeOut(0);
 $('#head').fadeOut(700);
 });
 $("#homeButton").click(function fade(div_id) {
-$('#head').delay(700).fadeIn(1200);
+$('#head').delay(700).fadeIn(2200);
 $('#homeButton').fadeOut(500);
 $('#about').fadeOut(500);
 $('#examples').fadeOut(500);
@@ -226,6 +247,7 @@ $('#optionTwo').fadeTo(0, 1);
 $('#optionThree').fadeTo(0, 1);
 $('#optionFour').fadeTo(0, 1);
 });
+
 $("#optionOne").mouseenter(function fade(div_id) {
 $('body').css('background-color', '#576678');
 });
@@ -271,6 +293,12 @@ $('body').css('background-color', '#FFF');
 $("#optionFive").click(function fade(div_id) {
 $('body').css('background-color', '#FFF');
 });
+$(".options").click(function fade(div_id) {
+$("body").css("overflow", "auto");
+});
+$("#homeButton").click(function fade(div_id) {
+$("body").css("overflow", "hidden");
+});
 
 $(".options").mouseenter(function fade(div_id) {
 $('#birdBox').fadeIn(0);
@@ -286,17 +314,37 @@ $('#bird9').fadeIn(0).animate({left:"100%", marginLeft: "700px", marginTop: "-10
 $('#bird10').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-10px"}, 4000);
 $('#bird12').fadeIn(0).animate({left:"100%", marginLeft: "800px", marginTop: "-10px"}, 8000);
 $('#bird13').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-110px"}, 10000);
-$('#bird14').fadeIn(0).animate({left:"100%", marginLeft: "900px", marginTop: "-310px"}, 7000);
+$('#bird14').fadeIn(0).animate({left:"100%", marginLeft: "900px", marginTop: "-10px"}, 7000);
 $('#bird15').fadeIn(0).animate({left:"100%", marginLeft: "500px", marginTop: "-10px"}, 4000);
-$('#bird16').fadeIn(0).animate({left:"100%", marginLeft: "900px", marginTop: "-10px"}, 3000);
+$('#bird16').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-10px"}, 8000);
 $('#bird17').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-10px"}, 10000);
-$('#bird18').fadeIn(0).animate({left:"100%", marginLeft: "400px", marginTop: "-10px"}, 1000);
+$('#bird18').fadeIn(0).animate({left:"100%", marginLeft: "400px", marginTop: "-10px"}, 10000);
 $('#bird19').fadeIn(0).animate({left:"100%", marginLeft: "700px", marginTop: "-10px"}, 5000);
-$('#bird20').fadeIn(0).animate({left:"100%", marginLeft: "900px", marginTop: "-10px"}, 4000);
+$('#bird20').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 8000);
+$('#bird21').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-500px"}, 10000);
+$('#bird22').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 10000);
+$('#bird23').fadeIn(0).animate({left:"100%", marginLeft: "900px", marginTop: "-10px"}, 7000);
+$('#bird24').fadeIn(0).animate({left:"100%", marginLeft: "700px", marginTop: "-10px"}, 9000);
+$('#bird25').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 8000);
+$('#bird26').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-100px"}, 10000);
+$('#bird27').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-100px"}, 10000);
+$('#bird28').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-100px"}, 5000);
+$('#bird29').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-100px"}, 8000);
+$('#bird30').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-100px"}, 10000);
+$('#bird31').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-100px"}, 10000);
+$('#bird32').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-100px"}, 10000);
+$('#bird33').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 7000);
+$('#bird34').fadeIn(0).animate({left:"100%", marginLeft: "700px", marginTop: "-10px"}, 4000);
+$('#bird35').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 8000);
+$('#bird36').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 10000);
+$('#bird37').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 10000);
+$('#bird38').fadeIn(0).animate({left:"100%", marginLeft: "500px", marginTop: "-10px"}, 5000);
+$('#bird39').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 8000);
+$('#bird40').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-0px"}, 10000);
 });
 
 $(".options").mouseleave(function fade(div_id) {
-$('#birdBox').stop().removeAttr('style').fadeOut(1000);
+$('#birdBox').removeAttr('style').fadeOut(1000);
 $('#bird1').stop().removeAttr('style');
 $('#bird2').stop().removeAttr('style');
 $('#bird3').stop().removeAttr('style');
@@ -317,6 +365,27 @@ $('#bird17').stop().removeAttr('style');
 $('#bird18').stop().removeAttr('style');
 $('#bird19').stop().removeAttr('style');
 $('#bird20').stop().removeAttr('style');
+$('#bird21').stop().removeAttr('style');
+$('#bird22').stop().removeAttr('style');
+$('#bird23').stop().removeAttr('style');
+$('#bird24').stop().removeAttr('style');
+$('#bird25').stop().removeAttr('style');
+$('#bird26').stop().removeAttr('style');
+$('#bird27').stop().removeAttr('style');
+$('#bird28').stop().removeAttr('style');
+$('#bird29').stop().removeAttr('style');
+$('#bird30').stop().removeAttr('style');
+$('#bird31').stop().removeAttr('style');
+$('#bird32').stop().removeAttr('style');
+$('#bird33').stop().removeAttr('style');
+$('#bird34').stop().removeAttr('style');
+$('#bird35').stop().removeAttr('style');
+$('#bird36').stop().removeAttr('style');
+$('#bird37').stop().removeAttr('style');
+$('#bird38').stop().removeAttr('style');
+$('#bird39').stop().removeAttr('style');
+$('#bird40').stop().removeAttr('style');
+
 });
 
 
