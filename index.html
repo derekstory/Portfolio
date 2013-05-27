@@ -205,7 +205,12 @@ $('#optionTwo').fadeTo(0, 1);
 $('#optionThree').fadeTo(0, 1);
 $('#optionFour').fadeTo(0, 1);
 });
-
+$("#homeButton").mouseenter(function fade(div_id) {
+$('#homeButton').fadeTo(0, 0.5);
+});
+$("#homeButton").mouseleave(function fade(div_id) {
+$('#homeButton').fadeTo(0, 1);
+});
 $("#optionOne").mouseenter(function fade(div_id) {
 $('body').css('background-color', '#576678');
 });
@@ -343,10 +348,7 @@ $('#bird37').stop().removeAttr('style');
 $('#bird38').stop().removeAttr('style');
 $('#bird39').stop().removeAttr('style');
 $('#bird40').stop().removeAttr('style');
-
 });
-
-
 </SCRIPT>
 
 </body>
