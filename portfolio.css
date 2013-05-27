@@ -9,6 +9,10 @@ body {
     -o-transition: all 0.8s linear;
     transition: all 0.8s linear;
 }
+h4 {
+    color: #777;
+    margin-top: -15px;
+}
 #fadeHead {
     margin-top: 0px;
     height: 50px;
@@ -90,6 +94,10 @@ body {
 }
 a {
     text-decoration: none;
+    color: #333;
+}
+#braving:hover {
+    color: #888;
 }
 
 #optionOne {
@@ -162,7 +170,7 @@ a {
     margin-top: 100px;
     color: #333;
     font-family: Arial;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 #examples{
     display: none;
