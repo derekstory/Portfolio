@@ -2,14 +2,16 @@
 #birdBox{
     display: none;
     position: absolute;
-    margin-top: 0;
+    margin-top: -100px;
     margin-bottom: 0;
-    margin-left: -15px;
-    z-index: 0;
+    margin-left: -205px;
+    z-index: -1;
 }
 #bird1{
     display: none;
+    position: absolute;
     background: url('images/birdSlow.gif') no-repeat;
+
     width: 100px;
     height: 130px;
     margin-left: -50px;
@@ -17,218 +19,212 @@
 }
 #bird2{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
-    margin-left: -50px;
+
+    margin-left: -150px;
     background-size:  50px;
     margin-bottom: -50px;
 }
 #bird3{
     display: none;
+    position: absolute;
     background: url('images/birdSlow.gif') no-repeat;
     width: 100px;
     height: 130px;
-    margin-left: -50px;
+    margin-left: -150px;
     background-size: 30px;
     margin-bottom: -20px;
 }
 #bird4{
+    position: absolute;
     display: none;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
-    margin-left: -50px;
-    margin-top: 0px;
+    margin-left: -200px;
     margin-bottom: -530px;
 }
 #bird5{
+    position: absolute;
     display: none;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
-    margin-left: -50px;
-    margin-top: -40px;
+
+    margin-left: -300px;
     margin-bottom: -450px;
 }
-#bird5{
-    display: none;
-    background: url('images/birdFaster.gif') no-repeat;
-    width: 100px;
-    height: 130px;
-    background-size:  40px;
-    margin-left: -50px;
-    margin-top: 0px;
-    margin-bottom: -100px;
-}
-#bird5{
-    display: none;
-    background: url('images/birdFaster.gif') no-repeat;
-    width: 100px;
-    height: 130px;
-    background-size:  40px;
-    margin-left: -50px;
-    margin-top: -100px;
-}
+
 #bird6{
     display: none;
+    position: absolute;
     background: url('images/birdSlow.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
-    margin-left: -50px;
-    margin-top: -200px;
+
+    margin-left: -350px;
 }
 #bird7{
+    position: absolute;
     display: none;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  20px;
-    margin-left: -50px;
-    margin-top: -50px;
+    margin-left: -250px;
+
 }
 #bird8{
     display: none;
+    position: absolute;
     background: url('images/birdSlow.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  50px;
-    margin-left: -50px;
-    margin-top: -30px;
+    margin-left: -200px;
+
 }
 #bird9{
     display: none;
+    position: absolute;
     background: url('images/birdSlow.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  30px;
     margin-left: -50px;
-    margin-top: -40px;
+
 }
 #bird10{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
-    margin-left: -50px;
-    margin-top: -100px;
+    margin-left: -550px;
+
 }
 #bird11{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
     margin-left: -50px;
-    margin-top: -100px;
+
     margin-bottom: -100px;
 }
 #bird12{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
     margin-left: -50px;
-    margin-top: -100px;
     margin-bottom: -100px;
 }
 #bird13{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
     margin-left: -50px;
-    margin-top: -100px;
     margin-bottom: -100px;
 }
 #bird14{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
     margin-left: -50px;
-    margin-top: -100px;
     margin-bottom: -100px;
 }
 #bird15{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
     margin-left: -50px;
-    margin-top: -100px;
     margin-bottom: -100px;
 }
 #bird16{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
     margin-left: -50px;
-    margin-top: -100px;
     margin-bottom: -100px;
 }
 #bird17{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
     margin-left: -50px;
-    margin-top: -100px;
     margin-bottom: -100px;
 }
 #bird18{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  60px;
     margin-left: -50px;
-    margin-top: -100px;
     margin-bottom: -100px;
 }
 #bird19{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  50px;
     margin-left: -50px;
-    margin-top: -100px;
     margin-bottom: -100px;
 }
 #bird20{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  50px;
     margin-left: -200px;
-    margin-top: -100px;
     margin-bottom: -100px;
 }
 #bird21 {
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
     margin-left: -50px;
-    margin-top: -100px;
+
     margin-bottom: -100px;
 }
 #bird22{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
@@ -238,6 +234,7 @@
 }
 #bird23{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
@@ -247,128 +244,128 @@
 }
 #bird24{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
     margin-left: -200px;
-    margin-top: 0px;
     margin-bottom: -530px;
 }
 #bird25{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
     margin-left: -200px;
-    margin-top: -40px;
     margin-bottom: -450px;
 }
 
 #bird26{
     display: none;
+    position: absolute;
     background: url('images/birdSlow.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
     margin-left: -200px;
-    margin-top: -200px;
 }
 #bird27{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  20px;
     margin-left: -200px;
-    margin-top: -50px;
 }
 #bird28{
     display: none;
+    position: absolute;
     background: url('images/birdSlow.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  50px;
     margin-left: -200px;
-    margin-top: -30px;
 }
 #bird29{
     display: none;
+    position: absolute;
     background: url('images/birdSlow.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  30px;
     margin-left: -200px;
-    margin-top: -40px;
 }
 #bird30{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
     margin-left: -200px;
-    margin-top: -100px;
 }
 #bird31{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
     margin-left: -200px;
-    margin-top: -100px;
     margin-bottom: -100px;
 }
 #bird32{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
     margin-left: -200px;
-    margin-top: -100px;
     margin-bottom: -100px;
 }
 #bird33{
     display: none;
+    position: absolute;
     background: url('images/birdSlow.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
-    margin-left: -200px;
-    margin-top: -100px;
+    margin-left: -600px;
     margin-bottom: -100px;
 }
 #bird34{
     display: none;
+    position: absolute;
     background: url('images/birdSlow.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
-    margin-left: -200px;
-    margin-top: -100px;
+    margin-left: -300px;
     margin-bottom: -100px;
 }
 #bird35{
     display: none;
+    position: absolute;
     background: url('images/birdSlow.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
-    margin-left: -200px;
-    margin-top: -100px;
+    margin-left: -700px;
     margin-bottom: -100px;
 }
 #bird36{
     display: none;
+    position: absolute;
     background: url('images/birdFaster.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  40px;
     margin-left: -200px;
-    margin-top: -200px;
     margin-bottom: -100px;
 }
 #bird37{
@@ -377,37 +374,36 @@
     width: 100px;
     height: 130px;
     background-size:  40px;
-    margin-left: -200px;
-    margin-top: -100px;
+    margin-left: -700px;
     margin-bottom: -100px;
 }
 #bird38{
     display: none;
+    position: absolute;
     background: url('images/birdSlow.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  60px;
-    margin-left: -200px;
-    margin-top: -100px;
+    margin-left: -800px;
     margin-bottom: -100px;
 }
 #bird39{
     display: none;
+    position: absolute;
     background: url('images/birdSlow.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  50px;
-    margin-left: -200px;
-    margin-top: -100px;
+    margin-left: -300px;
     margin-bottom: -100px;
 }
 #bird40{
     display: none;
+    position: absolute;
     background: url('images/birdSlow.gif') no-repeat;
     width: 100px;
     height: 130px;
     background-size:  50px;
-    margin-left: -200px;
-    margin-top: -100px;
+    margin-left: -500px;
     margin-bottom: -100px;
 }

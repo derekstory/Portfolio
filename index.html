@@ -16,7 +16,11 @@ $(document).ready(function(){
 $("body").css("overflow", "hidden");
 });
 </script>
-
+  <div id="clouds">
+     <div id="cloud1"></div>
+     <div id="cloud2"></div>
+     <div id="cloud3"></div>
+  </div>
   <div id="fadeHead">
     <h3 id="homeButton"></h3>
   </div>
@@ -40,6 +44,7 @@ $("body").css("overflow", "hidden");
    <div id="birdBox">
     <div id="bird1"></div><div id="bird2"></div><div id="bird3"></div><div id="bird4"></div><div id="bird5"></div><div id="bird6"></div><div id="bird7"></div><div id="bird8"></div><div id="bird9"></div><div id="bird10"></div><div id="bird11"></div><div id="bird12"></div><div id="bird13"></div><div id="bird14"></div><div id="bird15"></div><div id="bird16"></div><div id="bird17"></div><div id="bird18"></div><div id="bird19"></div><div id="bird20"></div><div id="bird21"></div><div id="bird22"></div><div id="bird23"></div><div id="bird24"></div><div id="bird25"></div><div id="bird26"></div><div id="bird27"></div><div id="bird28"></div><div id="bird29"></div><div id="bird30"></div><div id="bird31"></div><div id="bird32"></div><div id="bird33"></div><div id="bird34"></div><div id="bird35"></div><div id="bird36"></div><div id="bird37"></div><div id="bird38"></div><div id="bird39"></div><div id="bird40"></div></div>
   </div>
+
 <div id="about">
   <h1>About</h1>
   <h3>Ball State University 2010</h3>
@@ -59,7 +64,7 @@ $("body").css("overflow", "hidden");
   <h3>Front-End Related</h3>
   <h4>Adobe Design Suite CS6 - Photoshop - InDesign - Illustrator - Dreamweaver</h4>
   <h4>Slicing PSD's into websites (prefer hand coding)</h4>
-  <h4>PHP/MySQL Experience -- Relational -- See <a href="http://bravinginfinity.com" id="braving">Braving Infinity</a> for an example completely coded by myself.</h4>
+  <h4>PHP/MySQL Experience -- Relational -- See <a href="http://bravinginfinity.com" id="braving" target="_blank">Braving Infinity</a> for an example completely coded by myself.</h4>
   <h4>Graphic Design Experience</h4>
 
   <h3>Why I am unique:</h3>
@@ -75,18 +80,20 @@ $("body").css("overflow", "hidden");
   <h4>PHP/MySQL, CSS3, HTML5, JQuery, AJAX</h4>
 
   <a href="http://dev.imagelocker.com/albums.php" target="_blank" title="imagelocker.com">ImageLocker.com</a>
-  <h4 style="margin-top: 0">I am doing front-end work for a new company known as ImageLocker. This website is currently in the early stages of development. They have a graphic designer who comes up with the ides and it is my responsibility to turn turn that design into a functional website.  Everything is completely handcoded.  </h4>
+  <h4 style="margin-top: 0">I am a front-end developer for a new company known as ImageLocker. This website is currently in the early stages of development. A graphic designer comes up with the layout and it is my responsibility to turn that design into a functional website.  Everything is completely handcoded.  </h4>
   <h4>CSS3, HTML5, JQuery/JavaScript</h4>
 </div>
 
 <div id="interests">
-  <h1 class="int">Personal Interests</h1><br></br>
-  <h3 class="int">Movies:</h3>
-  <h3 class="int2">Requiem for a Dream, Eternal Sunshine of the Spotless Mind, The Fountain</h3><br></br>
-  <h3 class="int">Music:</h3>
-  <h3 class="int2">Sigur Ros, Sufjan Stevens, Bombay Bycicle Club</h3><br></br>
-  <h3 class="int">Athletics:</h3>
-  <h3 class="int2">Indiana Hoosiers, Indianapolis Colts</h3><br></br>
+  <h1 class="int">Personal Interests</h1>
+  <h3>Athletics</h3>
+  <h4 style="margin-top: -25px">I am a lifelong Indiana Hoosier basketball fan. Growing up in my household, I didn't have much choice in the matter. In my spare time, I am often found at the local basketball court.  I am also a huge fan of the Indianapolis Colts.  Go blue!</h3>
+  <h3>Music</h3>
+  <h4 style="margin-top: -25px">I have always been very interested in music.  I have played guitar for over 10 years.  Original tracks can be found at<a href="http://soundcloud.com/bravinginfinitydemo/sets/braving-infinity-demo" target="_blank"> Soundcloud.com/bravinginfinity</a></h4>
+  <h4 style="color: #333; display: inline">Favorite Artists:</h4>
+  <h4 style="display: inline">Sigur Ros, Sufjan Stevens, Bombay Bycicle Club, RAC Remixes, The Arcade Fire, Erik Mongrain, Clint Mansell, Phoenix, The Shins, Edward Sharp and the Magnetic Zeros, Balam Acab</h3>
+  <h3>Film</h3>
+  <h4  style="margin-top: -25px">Eternal Sunshine of the Spotless Mind, Requiem for a Dream, Garden State, The Science of Sleep, Sunshine, The Fountain, Forest Gump, The Wizard of Oz, The Tree of Life</h3><br></br>
 </div>
 
 <div id="links">
@@ -277,50 +284,53 @@ $("body").css("overflow", "hidden");
 });
 
 $(".options").mouseenter(function fade(div_id) {
-$('#birdBox').fadeIn(0);
-$('#bird1').fadeIn(0).animate({left:"100%", marginLeft: "800px", marginTop: "-600px"},3500);
-$('#bird2').fadeIn(0).animate({left:"100%", marginLeft: "800px", marginTop: "-80px"},3500);
-$('#bird3').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-10px"}, 5000);
-$('#bird4').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-310px"}, 5000);
-$('#bird5').fadeIn(0).animate({left:"100%", marginLeft: "800px", marginTop: "-110px"}, 6000);
-$('#bird6').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-110px"}, 4000);
-$('#bird7').fadeIn(0).animate({left:"100%", marginLeft: "700px", marginTop: "-110px"}, 7000);
-$('#bird8').fadeIn(0).animate({left:"100%", marginLeft: "700px", marginTop: "-310px"}, 7000);
-$('#bird9').fadeIn(0).animate({left:"100%", marginLeft: "700px", marginTop: "-10px"}, 7000);
-$('#bird10').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-10px"}, 4000);
-$('#bird12').fadeIn(0).animate({left:"100%", marginLeft: "800px", marginTop: "-10px"}, 8000);
-$('#bird13').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-110px"}, 10000);
-$('#bird14').fadeIn(0).animate({left:"100%", marginLeft: "900px", marginTop: "-10px"}, 7000);
-$('#bird15').fadeIn(0).animate({left:"100%", marginLeft: "500px", marginTop: "-10px"}, 4000);
-$('#bird16').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-10px"}, 8000);
-$('#bird17').fadeIn(0).animate({left:"100%", marginLeft: "600px", marginTop: "-10px"}, 10000);
-$('#bird18').fadeIn(0).animate({left:"100%", marginLeft: "400px", marginTop: "-10px"}, 10000);
-$('#bird19').fadeIn(0).animate({left:"100%", marginLeft: "700px", marginTop: "-10px"}, 5000);
-$('#bird20').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 8000);
-$('#bird21').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-500px"}, 10000);
-$('#bird22').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 10000);
-$('#bird23').fadeIn(0).animate({left:"100%", marginLeft: "900px", marginTop: "-10px"}, 7000);
-$('#bird24').fadeIn(0).animate({left:"100%", marginLeft: "700px", marginTop: "-10px"}, 9000);
-$('#bird25').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 8000);
-$('#bird26').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-100px"}, 10000);
-$('#bird27').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-100px"}, 10000);
-$('#bird28').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-100px"}, 5000);
-$('#bird29').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-100px"}, 8000);
-$('#bird30').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-100px"}, 10000);
-$('#bird31').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-100px"}, 10000);
-$('#bird32').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-100px"}, 10000);
-$('#bird33').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 7000);
-$('#bird34').fadeIn(0).animate({left:"100%", marginLeft: "700px", marginTop: "-10px"}, 4000);
-$('#bird35').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 8000);
-$('#bird36').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 10000);
-$('#bird37').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 10000);
-$('#bird38').fadeIn(0).animate({left:"100%", marginLeft: "500px", marginTop: "-10px"}, 5000);
-$('#bird39').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-10px"}, 8000);
-$('#bird40').fadeIn(0).animate({left:"100%", marginLeft: "1000px", marginTop: "-0px"}, 10000);
+$('#birdBox').fadeIn(0000).animate({left:"100%", marginLeft: "100%", marginTop: "-1000px"},10000);
+$('#bird1').fadeIn(0).animate({left:"100%", marginLeft: "80%", marginTop: "100px"},5000);
+$('#bird2').fadeIn(0).animate({left:"100%", marginLeft: "90%", marginTop: "100px"},15000);
+$('#bird3').fadeIn(0).animate({left:"100%", marginLeft: "70%", marginTop: "100px"}, 5000);
+$('#bird4').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-100px"}, 5000);
+$('#bird5').fadeIn(0).animate({left:"100%", marginLeft: "50%", marginTop: "-40px"}, 6000);
+$('#bird6').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-300px"}, 4000);
+$('#bird7').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-200px"}, 7000);
+$('#bird8').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "300px"}, 7000);
+$('#bird9').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-400px"}, 7000);
+$('#bird10').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "30px"}, 4000);
+$('#bird12').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 8000);
+$('#bird13').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 10000);
+$('#bird14').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 7000);
+$('#bird15').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 4000);
+$('#bird16').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 8000);
+$('#bird17').fadeIn(0).animate({left:"100%", marginLeft: "90%", marginTop: "-0px"}, 10000);
+$('#bird18').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 10000);
+$('#bird19').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 5000);
+$('#bird20').fadeIn(0).animate({left:"100%", marginLeft: "40%", marginTop: "-0px"}, 8000);
+$('#bird21').fadeIn(0).animate({left:"100%", marginLeft: "800%", marginTop: "-0px"}, 10000);
+$('#bird22').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 10000);
+$('#bird23').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 7000);
+$('#bird24').fadeIn(0).animate({left:"100%", marginLeft: "400%", marginTop: "-0px"}, 9000);
+$('#bird25').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 8000);
+$('#bird26').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 10000);
+$('#bird27').fadeIn(0).animate({left:"100%", marginLeft: "50%", marginTop: "-0px"}, 10000);
+$('#bird28').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 5000);
+$('#bird29').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 8000);
+$('#bird30').fadeIn(0).animate({left:"100%", marginLeft: "10%", marginTop: "-0px"}, 10000);
+$('#bird31').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 10000);
+$('#bird32').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 10000);
+$('#bird33').fadeIn(0).animate({left:"100%", marginLeft: "100$", marginTop: "-0px"}, 7000);
+$('#bird34').fadeIn(0).animate({left:"100%", marginLeft: "30%", marginTop: "-0px"}, 4000);
+$('#bird35').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 8000);
+$('#bird36').fadeIn(0).animate({left:"100%", marginLeft: "90%", marginTop: "-0px"}, 10000);
+$('#bird37').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 10000);
+$('#bird38').fadeIn(0).animate({left:"100%", marginLeft: "50%", marginTop: "-0px"}, 5000);
+$('#bird39').fadeIn(0).animate({left:"100%", marginLeft: "100%", marginTop: "-0px"}, 8000);
+$('#bird40').fadeIn(0).animate({left:"100%", marginLeft: "200%", marginTop: "00px"}, 10000);
+$('#cloud1').fadeIn(800).animate({left:"100%", marginLeft: "0px", marginTop: "-0px"}, 30000);
+$('#cloud2').fadeIn(800).animate({left:"100%", marginLeft: "-3000px", marginTop: "-0px"}, 40000);
+$('#cloud3').fadeIn(800).animate({left:"100%", marginLeft: "-3000px", marginTop: "-0px"}, 40000);
 });
 
 $(".options").mouseleave(function fade(div_id) {
-$('#birdBox').removeAttr('style').fadeOut(1000);
+$('#birdBox').stop().removeAttr('style');
 $('#bird1').stop().removeAttr('style');
 $('#bird2').stop().removeAttr('style');
 $('#bird3').stop().removeAttr('style');
@@ -361,6 +371,9 @@ $('#bird37').stop().removeAttr('style');
 $('#bird38').stop().removeAttr('style');
 $('#bird39').stop().removeAttr('style');
 $('#bird40').stop().removeAttr('style');
+$('#cloud1').stop().removeAttr('style');
+$('#cloud2').stop().removeAttr('style');
+$('#cloud3').stop().removeAttr('style');
 });
 </SCRIPT>
 
