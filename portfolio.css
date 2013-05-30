@@ -35,6 +35,7 @@ h4 {
     margin-left: -00px;
     z-index: -12;
 }
+
 #cloud2 {
     position: absolute;
     display: none;
@@ -56,6 +57,17 @@ h4 {
     margin-top: -10px;
     margin-left: 50%;
     z-index: -15;
+}
+#sun {
+    position: absolute;
+    display: none;
+    background: url('images/sun.png') no-repeat;
+    width: 4000px;;
+    height: 4000px;
+    background-size: 4000px;
+    margin-top: -1850px;
+    margin-left: -600px;
+    z-index: -100;
 }
 #homeButton {
     margin-left: 50px;
@@ -245,7 +257,7 @@ a {
 #birdBox{
     display: none;
     position: relative;
-    margin-top: -330px;
+    margin-top: -350px;
     margin-bottom: 0;
     margin-left: -255px;
     z-index: -1;
