@@ -4,7 +4,7 @@
     <meta name="description" content="The work of Derek Story" />
     <title>Derek Story Portfolio</title>
     <link rel="stylesheet" type="text/css" href="portfolio.css">
-
+    <script type="text/javascript" src="loopinganimation/js/jquery.timers-1.2.0.js" ></script>
     <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
     <script src="http://www.google.com/jsapi"></script>
 <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
@@ -13,9 +13,25 @@
 <body>
 <script type="text/javascript">
 $(document).ready(function(){
-	$('body').fadeIn(1300);
-$("body").css("overflow", "hidden");
+$('body').fadeIn(1300).css('background-color', '#0F1114').css("overflow", "hidden");
+$('#cloud1').fadeIn(800).animate({left:"100%", marginLeft: "0px", marginTop: "-0px"}, 50000);
+$('#cloud2').fadeIn(800).animate({left:"100%", marginLeft: "-3000px", marginTop: "-0px"}, 70000);
+$('#cloud3').fadeIn(800).animate({left:"100%", marginLeft: "-3000px", marginTop: "-0px"}, 90000);
+$('#sun').fadeIn(800);
+    var $birdBox = $('#birdBox');
+    function runIt() {
+        $birdBox.fadeIn(0).animate({
+              left:"100%",
+              marginLeft: "50%",
+              marginTop: "-550px"
+        }, 12000, function() {
+            $birdBox.removeAttr("style");
+            runIt();
+        });
+    }
+    runIt();
 });
+
 </script>
 
 
@@ -36,11 +52,11 @@ $("body").css("overflow", "hidden");
   </div><br></br>
 
    <div class="options">
-    <h1 id="optionOne">ABOUT</h1>
-    <h1 id="optionTwo">RECENT WORK</h1>
-    <h1 id="optionFour">LINKS</h1>
-    <h1 id="optionThree">INTERESTS</h1>
-    <h1 id="optionFive">CONTACT</h1>
+    <h1 id="optionOne" class="fadeTwo fadeThree fadeFour fadeFive">ABOUT</h1>
+    <h1 id="optionTwo" class="fadeOne fadeThree fadeFour fadeFive">RECENT WORK</h1>
+    <h1 id="optionFour" class="fadeOne fadeTwo fadeThree fadeFive">LINKS</h1>
+    <h1 id="optionThree" class="fadeOne fadeTwo fadeFour fadeFive" >INTERESTS</h1>
+    <h1 id="optionFive" class="fadeOne fadeThree fadeFour fadeTwo">CONTACT</h1>
    </div>
 
    <div id="bar"></div>
@@ -48,7 +64,7 @@ $("body").css("overflow", "hidden");
     <div id="bird1"></div><div id="bird2"></div><div id="bird3"></div><div id="bird4"></div><div id="bird5"></div><div id="bird6"></div><div id="bird7"></div><div id="bird8"></div><div id="bird9"></div><div id="bird10"></div><div id="bird11"></div><div id="bird12"></div><div id="bird13"></div><div id="bird14"></div><div id="bird15"></div><div id="bird16"></div><div id="bird17"></div><div id="bird18"></div><div id="bird19"></div><div id="bird20"></div><div id="bird21"></div><div id="bird22"></div><div id="bird23"></div><div id="bird24"></div><div id="bird25"></div><div id="bird26"></div><div id="bird27"></div><div id="bird28"></div><div id="bird29"></div><div id="bird30"></div><div id="bird31"></div><div id="bird32"></div><div id="bird33"></div><div id="bird34"></div><div id="bird35"></div><div id="bird36"></div><div id="bird37"></div><div id="bird38"></div><div id="bird39"></div><div id="bird40"></div></div>
   </div>
 
-<div id="about">
+<div id="about" class="contentPage">
   <h1>About</h1>
   <h3>Ball State University 2010</h3>
   <h4>Muncie, IN</h4>
@@ -76,7 +92,7 @@ $("body").css("overflow", "hidden");
   <h4 style="margin-top: 0">Embracing the evolution of web development is a necessity. The ability to quickly research, learn and implement will take any developer to the next level.  In a field where technology is constantly evolving, we are responsible for staying on top of new developments.  This is not only necessary, but also exciting.  An evolving field is the main reason I am a web developer.</h4>
 
 </div>
-<div id="examples">
+<div id="examples" class="contentPage">
   <h3>Recent Work</h1>
   <a href="http://bravinginfinity.com" target="_blank" title="BravingInfinity.com">BravingInfinity.com</a>
   <h4 style="margin-top: 0">I am developing a social website where users post original ideas to better themselves, their community and the world. The users will be able to encourage others, contribute ideas/implementations and track the progress of an idea in which they are interested. The content of the site will be completely text oriented. </h4>
@@ -91,7 +107,7 @@ $("body").css("overflow", "hidden");
   <h4>CSS3, HTML5, JQuery/JavaScript</h4>
 </div>
 
-<div id="interests">
+<div id="interests" class="contentPage">
   <h1 class="int">Personal Interests</h1>
   <h3>Athletics</h3>
   <h4 style="margin-top: -25px">I am a lifelong Indiana Hoosier basketball fan. Growing up in my household, I didn't have much choice in the matter. In my spare time, I am often found at the local basketball court.  I am also a huge fan of the Indianapolis Colts.  Go blue!</h3>
@@ -103,209 +119,90 @@ $("body").css("overflow", "hidden");
   <h4  style="margin-top: -25px">Eternal Sunshine of the Spotless Mind, Requiem for a Dream, Garden State, The Science of Sleep, Sunshine, The Fountain, Forest Gump, The Wizard of Oz, The Tree of Life</h3><br></br>
 </div>
 
-<div id="links">
+<div id="links" class="contentPage">
   <h1>Links</h1>
   <a href="https://github.com/derekstory" target="_blank" style="display: inline">GitHub-</a>
   <h3 style="display: inline; font-size: .8em; color: #333">See my code</h3><br></br>
   <a href="http://www.linkedin.com/pub/derek-story/45/532/6b4" target="_blank" style="display: inline">LinkedIn-</a>
   <h3 style="display: inline; font-size: .8em; color: #333">Connect Via LinkedIn</h3><br></br>
 </div>
-<div id="contact">
+<div id="contact" class="contentPage">
   <h1>Contact</h1>
   <h3 style="color: #888">derek.a.story@gmail.com</h3>
   <h3 style="margin-top: -20px; color:#888">260.228.0135</h3>
 </div>
 
-
-
 <SCRIPT type="text/javascript">
 $("#optionOne").click(function fade(div_id) {
 $('#about').delay(1000).fadeIn(700);
 $('#homeButton').delay(700).fadeIn(1200);
-$('#examples').fadeOut(0);
-$('#interests').fadeOut(0);
-$('#links').fadeOut(0);
-$('#contact').fadeOut(0);
-$('#head').fadeOut(700);
 });
-
 $("#optionTwo").click(function fade(div_id) {
 $('#examples').delay(700).fadeIn(1200);
 $('#homeButton').delay(1000).fadeIn(700);
-$('#about').fadeOut(0);
-$('#interests').fadeOut(0);
-$('#links').fadeOut(0);
-$('#contact').fadeOut(0);
-$('#head').fadeOut(700);
 });
-
 $("#optionThree").click(function fade(div_id) {
 $('#interests').delay(700).fadeIn(1200);
 $('#homeButton').delay(700).fadeIn(1200);
-$('#about').fadeOut(0);
-$('#examples').fadeOut(0);
-$('#links').fadeOut(0);
-$('#contact').fadeOut(0);
-$('#head').fadeOut(700);
 });
-
 $("#optionFour").click(function fade(div_id) {
 $('#links').delay(700).fadeIn(1200);
 $('#homeButton').delay(700).fadeIn(1200);
-$('#about').fadeOut(0);
-$('#examples').fadeOut(0);
-$('#interests').fadeOut(0);
-$('#contact').fadeOut(0);
-$('#head').fadeOut(700);
 });
-
 $("#optionFive").click(function fade(div_id) {
 $('#contact').delay(700).fadeIn(1200);
 $('#homeButton').delay(700).fadeIn(1200);
-$('#about').fadeOut(0);
-$('#examples').fadeOut(0);
-$('#interests').fadeOut(0);
-$('#links').fadeOut(0);
-$('#head').fadeOut(700);
 });
 $("#homeButton").click(function fade(div_id) {
-$('#head').delay(700).fadeIn(2200);
+$('#head').delay(700).fadeIn(1200);
+$('.options').delay(700).fadeIn(1200);
+$('#sun').delay(1000).fadeIn(2200);
 $('#homeButton').fadeOut(500);
-$('#about').fadeOut(500);
-$('#examples').fadeOut(500);
-$('#interests').fadeOut(500);
-$('#links').fadeOut(500);
-$('#contact').fadeOut(500);
+$('.contentPage').fadeOut(500);
+$('body').css("overflow", "hidden").fadeIn(1300).css('background-color', '#576678');
+$('#clouds').delay(1000).fadeIn(2200);
 });
 $("#optionOne").mouseenter(function fade(div_id) {
-$('#optionTwo').fadeTo(0, 0.2);
-$('#optionThree').fadeTo(0, 0.2);
-$('#optionFour').fadeTo(0, 0.2);
-$('#optionFive').fadeTo(0, 0.2);
-});
-$("#optionOne").mouseleave(function fade(div_id) {
-$('#optionTwo').fadeTo(0, 1);
-$('#optionThree').fadeTo(0, 1);
-$('#optionFour').fadeTo(0, 1);
-$('#optionFive').fadeTo(0, 1);
-});
-$("#optionTwo").mouseenter(function fade(div_id) {
-$('#optionOne').fadeTo(0, 0.2);
-$('#optionThree').fadeTo(0, 0.2);
-$('#optionFour').fadeTo(0, 0.2);
-$('#optionFive').fadeTo(0, 0.2);
-});
-$("#optionTwo").mouseleave(function fade(div_id) {
-$('#optionOne').fadeTo(0, 1);
-$('#optionThree').fadeTo(0, 1);
-$('#optionFour').fadeTo(0, 1);
-$('#optionFive').fadeTo(0, 1);
-});
-$("#optionThree").mouseenter(function fade(div_id) {
-$('#optionOne').fadeTo(0, 0.2);
-$('#optionTwo').fadeTo(0, 0.2);
-$('#optionFour').fadeTo(0, 0.2);
-$('#optionFive').fadeTo(0, 0.2);
-});
-$("#optionThree").mouseleave(function fade(div_id) {
-$('#optionOne').fadeTo(0, 1);
-$('#optionTwo').fadeTo(0, 1);
-$('#optionFour').fadeTo(0, 1);
-$('#optionFive').fadeTo(0, 1);
-});
-$("#optionFour").mouseenter(function fade(div_id) {
-$('#optionOne').fadeTo(0, 0.2);
-$('#optionTwo').fadeTo(0, 0.2);
-$('#optionThree').fadeTo(0, 0.2);
-$('#optionFive').fadeTo(0, 0.2);
-});
-$("#optionFour").mouseleave(function fade(div_id) {
-$('#optionOne').fadeTo(0, 1);
-$('#optionTwo').fadeTo(0, 1);
-$('#optionThree').fadeTo(0, 1);
-$('#optionFive').fadeTo(0, 1);
-});
-$("#optionFive").mouseenter(function fade(div_id) {
-$('#optionOne').fadeTo(0, 0.2);
-$('#optionTwo').fadeTo(0, 0.2);
-$('#optionThree').fadeTo(0, 0.2);
-$('#optionFour').fadeTo(0, 0.2);
-});
-$("#optionFive").mouseleave(function fade(div_id) {
-$('#optionOne').fadeTo(0, 1);
-$('#optionTwo').fadeTo(0, 1);
-$('#optionThree').fadeTo(0, 1);
-$('#optionFour').fadeTo(0, 1);
-});
-
-$("#optionOne").mouseenter(function fade(div_id) {
+$('.fadeOne').fadeTo(0, 0.2);
 $('body').css('background-color', '#576678');
 });
 $("#optionOne").mouseleave(function fade(div_id) {
-$('body').css('background-color', '#FFF');
+$('.fadeOne').fadeTo(0, 1);
 });
 $("#optionTwo").mouseenter(function fade(div_id) {
+$('.fadeTwo').fadeTo(0, 0.2);
 $('body').css('background-color', '#3E4957');
 });
 $("#optionTwo").mouseleave(function fade(div_id) {
-$('body').css('background-color', '#FFF');
-});
-$("#optionFour").mouseenter(function fade(div_id) {
-$('body').css('background-color', '#2A313B');
-});
-$("#optionThree").mouseleave(function fade(div_id) {
-$('body').css('background-color', '#FFF');
+$('.fadeTwo').fadeTo(0, 1);
 });
 $("#optionThree").mouseenter(function fade(div_id) {
+$('.fadeThree').fadeTo(0, 0.2);
 $('body').css('background-color', '#1E2329');
 });
+$("#optionThree").mouseleave(function fade(div_id) {
+$('.fadeThree').fadeTo(0, 1);
+});
+$("#optionFour").mouseenter(function fade(div_id) {
+$('.fadeFour').fadeTo(0, 0.2);
+$('body').css('background-color', '#2A313B');
+});
 $("#optionFour").mouseleave(function fade(div_id) {
-$('body').css('background-color', '#FFF');
+$('.fadeFour').fadeTo(0, 1);
 });
 $("#optionFive").mouseenter(function fade(div_id) {
+$('.fadeFive').fadeTo(0, 0.2);
 $('body').css('background-color', '#0F1114');
 });
 $("#optionFive").mouseleave(function fade(div_id) {
-$('body').css('background-color', '#FFF');
-});
-$("#optionOne").click(function fade(div_id) {
-$('body').css('background-color', '#FFF');
-});
-$("#optionTwo").click(function fade(div_id) {
-$('body').css('background-color', '#FFF');
-});
-$("#optionThree").click(function fade(div_id) {
-$('body').css('background-color', '#FFF');
-});
-$("#optionFour").click(function fade(div_id) {
-$('body').css('background-color', '#FFF');
-});
-$("#optionFive").click(function fade(div_id) {
-$('body').css('background-color', '#FFF');
+$('.fadeFive').fadeTo(0, 1);
 });
 $(".options").click(function fade(div_id) {
-$("body").css("overflow", "auto");
-});
-$("#homeButton").click(function fade(div_id) {
-$("body").css("overflow", "hidden");
-});
-
-$(".options").mouseenter(function fade(div_id) {
-$('#birdBox').fadeIn(0).animate({left:"100%", marginLeft: "50%", marginTop: "-550px"},15000);
-$('#cloud1').fadeIn(800).animate({left:"100%", marginLeft: "0px", marginTop: "-0px"}, 30000);
-$('#cloud2').fadeIn(800).animate({left:"100%", marginLeft: "-3000px", marginTop: "-0px"}, 50000);
-$('#cloud3').fadeIn(800).animate({left:"100%", marginLeft: "-3000px", marginTop: "-0px"}, 40000);
-$('#sun').fadeIn(800);
-});
-
-$(".options").mouseleave(function fade(div_id) {
-$('#birdBox').stop().removeAttr('style');
-$('#cloud1').stop().removeAttr('style');
-$('#cloud2').stop().removeAttr('style');
-$('#cloud3').stop().removeAttr('style');
-$('#sun').stop().removeAttr('style');
+$('body').css('background-color', '#FFF').css("overflow", "auto");
+$('#head').fadeOut(700);
+$('#clouds').fadeOut(700);
+$('.options').fadeOut(50);
 });
 </SCRIPT>
-
 </body>
 
