@@ -13,10 +13,7 @@
 <body>
 <script type="text/javascript">
 $(document).ready(function(){
-$('body').fadeIn(1300).css('background-color', '#0F1114').css("overflow", "hidden");
-$('#cloud1').fadeIn(800).animate({left:"100%", marginLeft: "0px", marginTop: "-0px"}, 50000);
-$('#cloud2').fadeIn(800).animate({left:"100%", marginLeft: "-3000px", marginTop: "-0px"}, 70000);
-$('#cloud3').fadeIn(800).animate({left:"100%", marginLeft: "-3000px", marginTop: "-0px"}, 90000);
+$('body').fadeIn(3000).css('background-color', '#0F1114').css("overflow", "hidden");
 $('#sun').fadeIn(800);
     var $birdBox = $('#birdBox');
     function runIt() {
@@ -31,9 +28,46 @@ $('#sun').fadeIn(800);
     }
     runIt();
 });
-
+$(document).ready(function(){
+    var $cloud1 = $('#cloud1');
+    function runIt() {
+        $cloud1.fadeIn(3000).animate({
+           marginLeft: "100%",
+           marginTop: "-0px"
+        }, 60000, function() {
+            $cloud1.removeAttr("style");
+            runIt();
+        });
+    }
+    runIt();
+});
+$(document).ready(function(){
+    var $cloud2 = $('#cloud2');
+    function runIt() {
+        $cloud2.fadeIn(3000).animate({
+           marginLeft: "-50%",
+           marginTop: "-0px"
+        }, 60000, function() {
+            $cloud2.removeAttr("style");
+            runIt();
+        });
+    }
+    runIt();
+});
+$(document).ready(function(){
+    var $cloud3 = $('#cloud3');
+    function runIt() {
+        $cloud3.fadeIn(3000).animate({
+           marginLeft: "-30%",
+           marginTop: "-0px"
+        }, 60000, function() {
+            $cloud3.removeAttr("style");
+            runIt();
+        });
+    }
+    runIt();
+});
 </script>
-
 
   <div id="clouds">
      <div id="cloud1"></div>
@@ -135,23 +169,18 @@ $('#sun').fadeIn(800);
 <SCRIPT type="text/javascript">
 $("#optionOne").click(function fade(div_id) {
 $('#about').delay(1000).fadeIn(700);
-$('#homeButton').delay(700).fadeIn(1200);
 });
 $("#optionTwo").click(function fade(div_id) {
 $('#examples').delay(700).fadeIn(1200);
-$('#homeButton').delay(1000).fadeIn(700);
 });
 $("#optionThree").click(function fade(div_id) {
 $('#interests').delay(700).fadeIn(1200);
-$('#homeButton').delay(700).fadeIn(1200);
 });
 $("#optionFour").click(function fade(div_id) {
 $('#links').delay(700).fadeIn(1200);
-$('#homeButton').delay(700).fadeIn(1200);
 });
 $("#optionFive").click(function fade(div_id) {
 $('#contact').delay(700).fadeIn(1200);
-$('#homeButton').delay(700).fadeIn(1200);
 });
 $("#homeButton").click(function fade(div_id) {
 $('#head').delay(700).fadeIn(1200);
@@ -159,7 +188,7 @@ $('.options').delay(700).fadeIn(1200);
 $('#sun').delay(1000).fadeIn(2200);
 $('#homeButton').fadeOut(500);
 $('.contentPage').fadeOut(500);
-$('body').css("overflow", "hidden").fadeIn(1300).css('background-color', '#576678');
+$('body').css("overflow", "hidden").fadeIn(1300).css('background-color', '#0F1114');
 $('#clouds').delay(1000).fadeIn(2200);
 });
 $("#optionOne").mouseenter(function fade(div_id) {
@@ -202,6 +231,7 @@ $('body').css('background-color', '#FFF').css("overflow", "auto");
 $('#head').fadeOut(700);
 $('#clouds').fadeOut(700);
 $('.options').fadeOut(50);
+$('#homeButton').delay(700).fadeIn(1200);
 });
 </SCRIPT>
 </body>
